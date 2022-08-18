@@ -1,15 +1,37 @@
-<div class="row">
+<div class="row col-proyec">
     <h1>Proyectos realizados</h1>
-    <div class="contenedor">
-        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-            <h1>Portfolio Web</h1>
-            <p>Portfolio web de arquitectura distribuida con diseño de interfaz de usuario (FrontEnd), y una base de datos con las APIs necesarias para proveer la información a traces del internet (BackEnd) </p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-2 parte2">
-            <div class="">
-            <img src="../../../assets/argentina programa.png" class="img-fluid ing-proyecto" id="imgproyecto">
-        </div>
-
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark button" routerLink="/newproyecto" *ngIf="isLogged">
+            Agregar Proyecto
+        </button>
     </div>
+    <tr class="contenedor " *ngFor="let Proyectos of proyectos">
+        <td class="col-sm-12 col-md-7 col-lg-7 parte1">
+            <h1>{{Proyectos.tituloP}}</h1>
+
+        </td>
+        <div class="des-pro">
+            <td class="col-sm-12 col-md-7 col-lg-7 parte1">
+                <p>{{Proyectos.descripcionP}}</p>
+                <div class="botones">
+                    <div *ngIf="isLogged">
+                        <button class="btn btn-light button1" routerLink="/editproyecto/{{Proyectos.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </div>
+                    <div *ngIf="isLogged">
+                        <button class="btn btn-danger button1" (click)="delete(Proyectos.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </div>
+                </div>
+            </td>
+            <td class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-2 parte2">
+
+                <img src="{{Proyectos.imgP}}" class="img-fluid ing-proyecto" id="imgproyecto">
+
+
+            </td>
+        </div>
+        
+    </tr>
 
 </div>

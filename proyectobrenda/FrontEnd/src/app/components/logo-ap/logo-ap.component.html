@@ -8,8 +8,9 @@
                 <a href="https://www.instagram.com/bren_db_/?hl=es-la"><img src="../../../assets/instagram.png" id="insta"></a>
                 <a href="https://twitter.com/bren_db"><img src="../../../assets/twitter.png" id=""></a>
                 <a href="https://github.com/BrendaDMC"><img src="../../../assets/github.png" id="GH"></a>
-                <button type="buttom" class="btn btn-outline-light"(click)="login()">INGRESO</button>
-        
+                <button type="buttom" class="btn btn-outline-light"(click)="login()" *ngIf="!isLogged">INGRESO</button>
+                <button type="buttom" class="btn btn-outline-light"(click)="onLogOut()"*ngIf="isLogged">CERRAR SESION</button>
+
             </div>
     </div>
 </div>

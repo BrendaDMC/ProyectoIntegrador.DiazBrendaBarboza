@@ -4,7 +4,13 @@
     align-items: center;
 }
 .redes{
-    margin-right: 0.5em;
+   display: flex;
+   margin-right: 5px;
+   gap: 15px;
+}
+.logo{
+    display: flex;
+    margin-left: 5px;
 }
 #logoAP{
     width: 150px;

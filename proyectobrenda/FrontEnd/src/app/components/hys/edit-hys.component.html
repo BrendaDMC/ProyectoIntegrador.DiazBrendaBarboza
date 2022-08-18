@@ -1,0 +1,36 @@
+<div class="container" *ngIf="hys">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="html">Pocentaje de Html</label>
+                    <input type="text" class="form-control" id="html" name="html" [(ngModel)]="hys.html" required>
+                </div>
+                <div class="form-group">
+                    <label for="css">Pocentaje de Css</label>
+                    <input type="number" class="form-control" id="css" name="css" [(ngModel)]="hys.css" required>
+                </div>
+                <div class="form-group">
+                    <label for="js">Pocentaje de Js</label>
+                    <input type="number" class="form-control" id="js" name="js" [(ngModel)]="hys.js" required>
+                </div>
+                <div class="form-group">
+                    <label for="git">Pocentaje de Git Hub</label>
+                    <input type="number" class="form-control" id="git" name="git" [(ngModel)]="hys.git" required>
+                </div>
+                <div class="form-group">
+                    <label for="en">Pocentaje de English</label>
+                    <input type="number" class="form-control" id="en" name="en" [(ngModel)]="hys.en" required>
+                </div>
+                <div class="form-group">
+                    <label for="comp">Pocentaje de Trabajo en Equipo</label>
+                    <input type="number" class="form-control" id="comp" name="comp" [(ngModel)]="hys.comp" required>
+                </div>
+                
+                <button class="btn btn-primary">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

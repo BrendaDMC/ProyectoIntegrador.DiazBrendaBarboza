@@ -11,8 +11,8 @@
     <groupId>com.portfolio</groupId>
     <artifactId>mgb</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mgb</name>
-    <description>portfolio de mgb</description>
+    <name>mgb.Produccion</name>
+    <description>Portfolio de MGB</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -51,6 +51,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -59,6 +60,11 @@
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
         </dependency>
 
     </dependencies>

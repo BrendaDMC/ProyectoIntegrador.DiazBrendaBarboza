@@ -1,105 +1,48 @@
 <div class="row">
-    <h1>Hard & Soft Skills </h1>
+  <h1>Hard & Soft Skills </h1>
+  
+    <div class="hys" *ngFor="let Hys of hs">
     <div class="text-center col-sm-4 col-md-4 col-lg-4">
-<circle-progress
-  [percent]="70"
-  [radius]="100"
-  [imageSrc]="'../../../assets/html.png'"
-  [showImage]="true"
-  [imageHeight]="100"
-  [imageWidth]="100"
-  [showUnits]="false"
-  [outerStrokeWidth]="16"
-  [innerStrokeWidth]="8"
-  [outerStrokeColor]="'orange'"
-  [innerStrokeColor]="'#C7E596'"
-  [animation]="true"
-  [animationDuration]="300"
-></circle-progress>
- </div>
- <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-      [percent]="70"
-      [radius]="100"
-      [imageSrc]="'../../../assets/CSS.png'"
-  [showImage]="true"
-  [imageHeight]="120"
-  [imageWidth]="100"
-      [showUnits]="false"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [outerStrokeColor]="'blue'"
-      [innerStrokeColor]="'#C7E596'"
-      [animation]="true"
-      [animationDuration]="300"
-    ></circle-progress>
-     </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-          [percent]="80"
-          [radius]="100"
-          [imageSrc]="'../../../assets/js.png'"
-  [showImage]="true"
-  [imageHeight]="100"
-  [imageWidth]="100"
-          [showUnits]="false"
-          [outerStrokeWidth]="16"
-          [innerStrokeWidth]="8"
-          [outerStrokeColor]="'yellow'"
-          [innerStrokeColor]="'#C7E596'"
-          [animation]="true"
-          [animationDuration]="300"
-        ></circle-progress>
-         </div>   
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-            <circle-progress
-              [percent]="75"
-              [radius]="100"
-              [imageSrc]="'../../../assets/github.png'"
-  [showImage]="true"
-  [imageHeight]="100"
-  [imageWidth]="100"
-              [showUnits]="false"
-              [outerStrokeWidth]="16"
-              [innerStrokeWidth]="8"
-              [outerStrokeColor]="'white'"
-              [innerStrokeColor]="'#C7E596'"
-              [animation]="true"
-              [animationDuration]="300"
-            ></circle-progress>
-             </div>       
-     
- <div class="text-center col-sm-4 col-md-4 col-lg-4">
-                <circle-progress
-                  [percent]="90"
-                  [radius]="100"
-                  [imageSrc]="'../../../assets/ingles.png'"
-                  [showImage]="true"
-                  [imageHeight]="100"
-                  [imageWidth]="100"[showUnits]="false"
-                  [outerStrokeWidth]="16"
-                  [innerStrokeWidth]="8"
-                  [outerStrokeColor]="'black'"
-                  [innerStrokeColor]="'#C7E596'"
-                  [animation]="true"
-                  [animationDuration]="300"
-                ></circle-progress>
-                 </div>
- <div class="text-center col-sm-4 col-md-4 col-lg-4">
-                    <circle-progress
-                      [percent]="100"
-                      [radius]="100"
-                      [imageSrc]="'../../../assets/grupos.png'"
-                      [showImage]="true"
-                      [imageHeight]="100"
-                      [imageWidth]="100"[showUnits]="false"
-                      [outerStrokeWidth]="16"
-                      [innerStrokeWidth]="8"
-                      [outerStrokeColor]="'lightblue'"
-                      [innerStrokeColor]="'#C7E596'"
-                      [animation]="true"
-                      [animationDuration]="300"
-                    ></circle-progress>
-                     </div>   
-                 
+      <circle-progress [percent]="Hys.html" [radius]="100" [imageSrc]="'../../../assets/html.png'"
+        [showImage]="true" [imageHeight]="100" [imageWidth]="100" [showUnits]="false" [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8" [outerStrokeColor]="'orange'" [innerStrokeColor]="'#C7E596'" [animation]="true"
+        [animationDuration]="300">
+      </circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress [percent]="Hys.css" [radius]="100" [imageSrc]="'../../../assets/CSS.png'" [showImage]="true"
+        [imageHeight]="120" [imageWidth]="100" [showUnits]="false" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+        [outerStrokeColor]="'blue'" [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300">
+      </circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress [percent]="Hys.js" [radius]="100" [imageSrc]="'../../../assets/js.png'" [showImage]="true"
+        [imageHeight]="100" [imageWidth]="100" [showUnits]="false" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+        [outerStrokeColor]="'yellow'" [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300">
+      </circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress [percent]="Hys.git" [radius]="100" [imageSrc]="'../../../assets/github.png'" [showImage]="true"
+        [imageHeight]="100" [imageWidth]="100" [showUnits]="false" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+        [outerStrokeColor]="'white'" [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300">
+      </circle-progress>
+    </div>
+
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress [percent]="Hys.en" [radius]="100" [imageSrc]="'../../../assets/ingles.png'" [showImage]="true"
+        [imageHeight]="100" [imageWidth]="100" [showUnits]="false" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+        [outerStrokeColor]="'black'" [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300">
+      </circle-progress>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+      <circle-progress [percent]="Hys.comp" [radius]="100" [imageSrc]="'../../../assets/grupos.png'" [showImage]="true"
+        [imageHeight]="100" [imageWidth]="100" [showUnits]="false" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+        [outerStrokeColor]="'lightblue'" [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300">
+      </circle-progress>
+    </div>
+    <div *ngIf="isLogged">
+      <button class="btn btn-light button1" routerLink="/edithys/{{Hys.id}}">
+          <i class="bi bi-pencil-fill"></i> EDITAR</button>
+      </div>
+  </div>
 </div>

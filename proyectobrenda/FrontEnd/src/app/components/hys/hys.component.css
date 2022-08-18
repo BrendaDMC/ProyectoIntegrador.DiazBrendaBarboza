@@ -1,5 +1,8 @@
 .row{
-    background-color: #caa1c0;
     padding: 20px;
     
+}
+.hys{
+    display: flex;
+    flex-wrap: wrap;
 }

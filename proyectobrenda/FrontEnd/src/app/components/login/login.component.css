@@ -13,6 +13,9 @@ h2,
 h3 {
   font-family: 'Kaushan Script', cursive;
 }
+.forget{
+  color: black;
+}
 
 .myform {
   position: relative;

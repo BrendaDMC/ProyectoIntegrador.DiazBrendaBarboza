@@ -2,7 +2,6 @@
     padding: 20px
 }
 div{
-    background-color: #caa1c0;
     text-align: center;
 }
 @media(min-width: 576px){
@@ -31,4 +30,30 @@ div{
     font-weight: bold;
     margin-top: 30%;
 }
-
+span{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.acercade{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;  
+}
+.button{
+    width:170px;
+    font-weight: normal;
+    font-size: 15px;
+}
+.button1{
+    width:100px;
+    font-weight: normal;
+    font-size: 15px; 
+}
+.botones{
+    display: flex;
+    justify-content:space-between;
+    width: 300px;
+}

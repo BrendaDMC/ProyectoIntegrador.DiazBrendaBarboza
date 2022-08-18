@@ -22,37 +22,40 @@
                   </div>
                   <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
                      <div class="form-group col-md-12">
+                        <input type="user" id="nombreUsuario" name="nombreUsuario" class="form-control"
+                           [(ngModel)]="nombreUsuario" required placeholder="Ingrese su Usuario" />
                         <label for="exampleInputEmail1">Usuario</label>
-                        <input type="email" name="nombreUsuario" class="form-control" id="nombreUsuario" aria-describedby="emailHelp"
-                           placeholder="Ingrese su Usuario" [(ngModel)]="nombreUsuario" required/>
-                     </div>
-                     <div class="form-group col-md-12">
-                        <label for="exampleInputEmail1">Contraseña</label>
-                        <input type="password" name="password" id="password" class="form-control"
-                           aria-describedby="emailHelp" placeholder="Ingrese Contraseña" [(ngModel)]="password" required/>
-                     </div>
-                  <div class="butom">
-                  <input type="button" value="Enviar">
-                  </div>
-                     <div class="col-md-12 ">
-                        <div class="login-or">
-                           <hr class="hr-or">
-                           <span class="span-or">or</span>
-                        </div>
-                     </div>
-                     <div class="col-md-12 mb-3">
-                        <p class="text-center">
-                           <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">
-                              </i> Ingrese usando Google
-                           </a>
-                        </p>
-                     </div>
-                     <div class="form-group">
-                        <p class="text-center">No posee una cuenta? <a href="#" id="signup">Ingrese Aqui!</a></p>
-                     
 
                      </div>
+                     <div class="form-group col-md-12">
+                        <input type="password" name="password" required id="password" class="form-control"
+                           [(ngModel)]="password" placeholder="Ingrese Contraseña" />
+                        <label for="exampleInputEmail1">Contraseña</label>
+
+                     </div>
+                     <p><a class="forget" href="#">¿olvido su contraseña?</a></p>
+                     <button class="butom" type="submit">Login</button>
                   </form>
+
+                  <div class="col-md-12 ">
+                     <div class="login-or">
+                        <hr class="hr-or">
+                        <span class="span-or">or</span>
+                     </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                     <p class="text-center">
+                        <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">
+                           </i> Ingrese usando Google
+                        </a>
+                     </p>
+                  </div>
+                  <div class="form-group">
+                     <p class="text-center">No posee una cuenta? <a href="#" id="signup">Ingrese Aqui!</a></p>
+
+
+                  </div>
+
 
                </div>
             </div>
