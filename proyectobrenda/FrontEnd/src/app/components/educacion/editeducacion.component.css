@@ -9,3 +9,20 @@
     font-weight: normal;
     font-size: 15px; 
 }
+*{
+    margin: 0;
+    padding:0;
+}
+.container {
+    display: flex;
+    background-image: url("..//img/17010.jpg");
+    flex-direction: column;
+    width: 100%;
+    height:800px;
+    justify-content:center;
+    color: bisque;
+    font-weight: bold;
+}
+.row{
+    margin:10px;
+}

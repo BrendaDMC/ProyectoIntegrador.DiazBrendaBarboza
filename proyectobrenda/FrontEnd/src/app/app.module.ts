@@ -49,7 +49,7 @@ import { EditProyectosComponent } from './components/proyecto/edit-proyectos.com
     EditAcercadeComponent,
     EditHysComponent,
     NewProyectosComponent,
-    EditProyectosComponent
+    EditProyectosComponent,
   ],
   imports: [
     BrowserModule,

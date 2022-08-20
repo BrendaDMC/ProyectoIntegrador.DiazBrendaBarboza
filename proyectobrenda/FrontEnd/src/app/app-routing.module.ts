@@ -16,6 +16,7 @@ import { NewProyectosComponent } from './components/proyecto/new-proyectos.compo
 const routes: Routes = [
   {path:'',component: HomeComponent},
   {path:'login',component: LoginComponent},
+  {path:'login',component: LoginComponent},
   {path:'nuevaexp',component: NewExperienciaComponent},
   {path:'editexp/:id',component:EditExperienciaComponent},
   {path:'nuevaedu',component: NeweducacionComponent},
@@ -24,7 +25,7 @@ const routes: Routes = [
   {path: 'editacerca/:id', component: EditAcercadeComponent},
   {path: 'edithys/:id', component:EditHysComponent},
   {path: 'newproyecto',component: NewProyectosComponent},
-  {path: 'editproyecto', component: EditProyectosComponent}
+  {path: 'editproyecto/:id', component: EditProyectosComponent}
 
 ];
 
