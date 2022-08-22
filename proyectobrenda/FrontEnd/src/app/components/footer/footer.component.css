@@ -1,4 +1,8 @@
-
+.row{
+    margin:0;
+    padding:0;
+    max-width: 100%;
+}
 footer{
     color: white;
     font-size: 14px;

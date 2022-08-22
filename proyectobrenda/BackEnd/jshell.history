@@ -1,0 +1,3 @@
+EXPRESSION#>java -version
+EXPRESSION#>javac -version
+VAR#>java version

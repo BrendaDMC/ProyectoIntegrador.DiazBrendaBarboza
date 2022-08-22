@@ -9,21 +9,26 @@
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
             <h1>Acerca de mi</h1>
-
+            <div class="col-lg-2">
+                <button type="button" class="btn btn-dark button" routerLink="/nuevaacerca" *ngIf="isLogged">
+                    Agregar Descripcion
+                </button>
+            </div>
             <div class="acercade" *ngFor="let Acercade of acercade">
-                
-                    <p>{{Acercade.acerca}}</p>
-                
+
+
+                <p>{{Acercade.acerca}}</p>
+
                 <div class="botones">
-                    <div class="col-lg-2">
-                        <button type="button" class="btn btn-dark button" routerLink="/nuevaacerca" *ngIf="isLogged">
-                            Agregar Descripcion
-                        </button>
-                    </div>
+
                     <div *ngIf="isLogged">
                         <button class="btn btn-light button1" routerLink="/editacerca/{{Acercade.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
                     </div>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger button1" (click)="delete(Acercade.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
                 </div>
             </div>
 

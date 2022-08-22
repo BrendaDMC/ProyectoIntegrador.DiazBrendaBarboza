@@ -25,6 +25,7 @@ img{
 @media(max-width:575px){
 .container{
     flex-direction: column;
+    margin-bottom: 15px;
 }
 .redes{
     display: flex;

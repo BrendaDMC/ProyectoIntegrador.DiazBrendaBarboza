@@ -10,22 +10,24 @@
     <div class="col-lg-11">
         <table class="table">
             <tbody>
-                <tr *ngFor="let Educacion of educacion">
-                    <td>
+                <tr class="media-list" *ngFor="let Educacion of educacion">
+                    <div>
                         <h3>{{Educacion.nombreE}}</h3>
-                    </td>
-                    <td>
+                    </div>
+                    <div>
                         <h4>{{Educacion.periodoE}}</h4>
-                    </td>
-                    <td><b>{{Educacion.descripcionE}}</b></td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-light button1" routerLink="/editedu/{{Educacion.id}}">
-                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger button1" (click)="delete(Educacion.id)">
-                            <i class="bi bi-trash-fill"></i> BORRAR</button>
-                    </td>
+                    </div>
+                    <div><b>{{Educacion.descripcionE}}</b></div>
+                    <div class="botones">
+                        <div *ngIf="isLogged">
+                            <button class="btn btn-light button1" routerLink="/editedu/{{Educacion.id}}">
+                                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                        </div>
+                        <div *ngIf="isLogged">
+                            <button class="btn btn-danger button1" (click)="delete(Educacion.id)">
+                                <i class="bi bi-trash-fill"></i> BORRAR</button>
+                        </div>
+                    </div>
                 </tr>
             </tbody>
         </table>

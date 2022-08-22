@@ -10,22 +10,24 @@
     <div class="col-lg-11">
         <table class="table">
             <tbody>
-                <tr *ngFor="let Experiencia of expe">
-                    <td>
+                <tr div="media-list" *ngFor="let Experiencia of expe">
+                    <div>
                         <h3>{{Experiencia.nombreE}}</h3>
-                    </td>
-                    <td>
+                    </div>
+                    <div>
                         <h4>{{Experiencia.periodoEx}}</h4>
-                    </td>
-                    <td><b> {{Experiencia.descripcionE}}</b> </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-light button1" routerLink="/editexp/{{Experiencia.id}}">
-                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger button1" (click)="delete(Experiencia.id)">
-                            <i class="bi bi-trash-fill"></i> BORRAR</button>
-                    </td>
+                    </div>
+                    <div><b> {{Experiencia.descripcionE}}</b> </div>
+                    <div class="botones">
+                        <div *ngIf="isLogged">
+                            <button class="btn btn-light button1" routerLink="/editexp/{{Experiencia.id}}">
+                                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                        </div>
+                        <div *ngIf="isLogged">
+                            <button class="btn btn-danger button1" (click)="delete(Experiencia.id)">
+                                <i class="bi bi-trash-fill"></i> BORRAR</button>
+                        </div>
+                    </div>
                 </tr>
             </tbody>
         </table>
