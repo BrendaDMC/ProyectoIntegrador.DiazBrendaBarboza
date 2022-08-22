@@ -8,9 +8,9 @@ import { Proyectos } from '../model/proyectos';
 })
 export class ProyectosService {
   //Online
-  /* URL = 'https://back-endportfolio.herokuapp.com/proyectos/'; */
+  URL = 'https://back-endportfolio.herokuapp.com/proyectos/';
 //Local
-  URL = 'http://localhost:8080/proyectos/';
+  /* URL = 'http://localhost:8080/proyectos/'; */
 
   constructor(private httpClient : HttpClient) { }
 

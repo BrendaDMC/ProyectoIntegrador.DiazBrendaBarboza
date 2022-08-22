@@ -8,9 +8,9 @@ import { Acercade } from '../model/acercade';
 })
 export class AcercadeService {
   //Online
- /*  URL = 'https://back-endportfolio.herokuapp.com/acercade/'; */
+  URL = 'https://back-endportfolio.herokuapp.com/acercade/';
   //Local
-  URL = 'http://localhost:8080/acercade/';
+/*   URL = 'http://localhost:8080/acercade/'; */
 
   constructor(private httpClient : HttpClient) { }
   public lista(): Observable<Acercade[]>{

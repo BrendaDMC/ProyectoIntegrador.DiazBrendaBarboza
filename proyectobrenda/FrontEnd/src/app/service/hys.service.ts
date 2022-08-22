@@ -8,9 +8,9 @@ import { Hys } from '../model/hys';
 })
 export class HysService {
   //Online
-  /* URL = 'https://back-endportfolio.herokuapp.com/hys/'; */
+  URL = 'https://back-endportfolio.herokuapp.com/hys/';
   //Local
-  URL = 'http://localhost:8080/hys/';
+/*   URL = 'http://localhost:8080/hys/'; */
 
   constructor(private httpClient : HttpClient) { }
   public lista(): Observable<Hys[]>{
