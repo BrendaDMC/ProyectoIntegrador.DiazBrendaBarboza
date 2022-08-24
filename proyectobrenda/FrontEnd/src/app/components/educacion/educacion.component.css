@@ -1,32 +1,45 @@
-.row{
+.row {
     padding: 20px;
 }
 
-h1, h3{
+h1,
+h3 {
     display: inline;
 }
 
-.button{
-    width:170px;
+.button {
+    width: 170px;
     font-weight: normal;
     font-size: 15px;
 }
-.button1{
-    width:130px;
+
+.button1 {
+    width: 130px;
     font-weight: normal;
-    font-size: 15px; 
+    font-size: 15px;
 }
+
+.botones {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
 @media (max-width:575px) {
-    .media-list{
+    .media-list {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         gap: 15px;
         align-items: center;
-        justify-content:center;
-        margin:0;
-        padding:0;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
     }
-    .botones{
+
+    .botones {
         display: flex;
         gap: 15px;
         justify-content: center;
@@ -34,5 +47,5 @@ h1, h3{
 
     }
 
-    
+
 }
